@@ -1,6 +1,7 @@
-package a_regist.a_xml;
+package a_regist.b_annotation;
 
 public class Book {
+
     private String title;
     private String author;
     private String publisher;
@@ -14,6 +15,8 @@ public class Book {
         this.author = author;
         this.publisher = publisher;
         this.page = page;
+
+        System.out.println("매개변수가 있는 생성자 호출");
     }
 
     @Override
@@ -31,6 +34,7 @@ public class Book {
     }
 
     public void setTitle(String title) {
+        System.out.println("setTitle 호출");
         this.title = title;
     }
 
